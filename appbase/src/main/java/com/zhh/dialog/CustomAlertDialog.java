@@ -7,27 +7,18 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.mhl.fastapp.R;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
+import com.zhh.appbase.R;
 
 /**
  * Created by MHL on 2016/10/13.
  */
 public class CustomAlertDialog extends Dialog implements View.OnClickListener {
 
-    @BindView(R.id.title)
     TextView mTitle;
-    @BindView(R.id.tips)
     TextView mTips;
-    @BindView(R.id.cancel)
     TextView mCancel;
-    @BindView(R.id.confirm)
     TextView mConfirm;
-    @BindView(R.id.dialog_container)
     LinearLayout mDialogContainer;
-
     private AlertButtonListener mAlertButtonListener;
 
     private String mTitleText;
@@ -73,11 +64,17 @@ public class CustomAlertDialog extends Dialog implements View.OnClickListener {
         setContentView(R.layout.dialog_custom);
         setCancelable(true);
         setCanceledOnTouchOutside(true);
-        ButterKnife.bind(this, this);
         setupView();
     }
 
     private void setupView() {
+
+        mTitle = (TextView) findViewById(R.id.title);
+        mTips = (TextView) findViewById(R.id.tips);
+        mConfirm = (TextView) findViewById(R.id.confirm);
+        mCancel = (TextView) findViewById(R.id.cancel);
+        mDialogContainer = (LinearLayout) findViewById(R.id.dialog_container);
+
         mConfirm.setOnClickListener(this);
         mCancel.setOnClickListener(this);
         mDialogContainer.setOnClickListener(this);
@@ -107,6 +104,7 @@ public class CustomAlertDialog extends Dialog implements View.OnClickListener {
 
     public interface AlertButtonListener {
         void onLeftButtonClick();
+
         void onRightButtonClick();
     }
 }

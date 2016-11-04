@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.mhl.fastapp.R;
+import com.zhh.appbase.R;
 import com.zhh.common.util.DisplayUtil;
 
 /**

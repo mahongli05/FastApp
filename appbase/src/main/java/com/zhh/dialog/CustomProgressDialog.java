@@ -5,7 +5,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.mhl.fastapp.R;
+import com.zhh.appbase.R;
+
 
 /**
  * Created by MHL on 2016/9/19.

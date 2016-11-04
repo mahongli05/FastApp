@@ -15,7 +15,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-import com.example.mhl.fastapp.R;
+import com.zhh.appbase.R;
 import com.zhh.control.JsHandler;
 
 

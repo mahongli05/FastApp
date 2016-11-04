@@ -5,7 +5,7 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.example.mhl.fastapp.R;
+import com.zhh.appbase.R;
 
 /**
  * Created by MHL on 2016/10/13.
