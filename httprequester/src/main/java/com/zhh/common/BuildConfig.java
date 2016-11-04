@@ -5,5 +5,5 @@ package com.zhh.common;
  */
 public class BuildConfig {
 
-    public static final boolean DEBUG = BuildConfig.DEBUG;
+    public static final boolean DEBUG = true;
 }
